@@ -1,0 +1,21 @@
+{
+  "name": "lh-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lhci:autorun": "lhci autorun",
+    "lhci:audit": "concurrently \"npm run lhci:server\" \"lhci autorun\"",
+    "lhci:wizard": "lhci wizard",
+    "lhci:server": "lhci server --storage.storageMethod=sql --storage.sqlDialect=sqlite --storage.sqlDatabasePath=./db.sql"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@lhci/cli": "^0.9.0",
+    "@lhci/server": "^0.9.0",
+    "concurrently": "^7.1.0",
+    "sqlite3": "^5.0.4"
+  }
+}
