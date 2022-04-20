@@ -4,7 +4,8 @@ module.exports = {
       // 配置启动的命令
       // startServerCommand: 'yarn run dev',
       // 测试的页面，可配置多个
-      url: ['https://m.chexiaofeng.com/autobee_news/rank_detail/1'],
+      url: ['https://m.chexiaofeng.com/autobee_news/rank_detail/1',
+    'https://m.chexiaofeng.com/autobee_news/compareDoubleCar/detail?car_model_ids=%5B51423,52333%5D&h5_share=1&from=cxf'],
       // 运行次数，默认3次
       numberOfRuns: 1,
       settings: {
@@ -14,14 +15,14 @@ module.exports = {
         // 只执行部分审查
         onlyAudits: ['first-meaningful-paint', 'speed-index','interactive'],
         // 跳过某些审查
-        skipAudits:[],
+        // skipAudits:[],
         // 配置网络
         throttling:{}
       }
     },
     upload: {
       serverBaseUrl: "http://localhost:9001",
-      token: "87b68d52-f303-4646-a04a-2695b32d2617",
+      token: "b49de5e4-873f-4280-aa60-dfdc841b066d",
     },
   }
 }
