@@ -1,3 +1,8 @@
+/*
+ * @Description: 
+ * @Author: znh
+ * @Date: 2022-04-20 14:11:01
+ */
 module.exports = {
   ci: {
     collect: {
@@ -7,7 +12,7 @@ module.exports = {
       url: ['https://m.chexiaofeng.com/autobee_news/rank_detail/1',
     'https://m.chexiaofeng.com/autobee_news/compareDoubleCar/detail?car_model_ids=%5B51423,52333%5D&h5_share=1&from=cxf'],
       // 运行次数，默认3次
-      numberOfRuns: 3,
+      numberOfRuns: 1,
       settings: {
         // 根据实际配置，完整settings可看文档 https://github.com/GoogleChrome/lighthouse/blob/575e29b8b6634bfb280bc820efea6795f3dd9017/types/externs.d.ts#L141-L186
         // 只审查某分类
@@ -22,7 +27,11 @@ module.exports = {
     },
     upload: {
       serverBaseUrl: "http://localhost:9001",
-      token: "b49de5e4-873f-4280-aa60-dfdc841b066d",
+      token: "6d84761a-090b-4bbb-92ea-fc5e1bfedbae",
+      basicAuth: {
+        username: "admin",
+        password: "123456"
+      }
     },
   }
 }
